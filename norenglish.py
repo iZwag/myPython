@@ -26,7 +26,7 @@ class NorEnglish:
         string_list = list(string)
         for i in range(len(string_list)):
             if string_list[i] in self.NOR_SYMBOLS:
-                string_list[i] = self.NOR_DBL_SYMBOLS[string_list[i].lower()]
+                string_list[i] = self.NOR_DBL_LOWER[string_list[i].lower()]
             self._string += string_list[i]
 
         return self._string
